@@ -6,7 +6,7 @@
     <title>Document</title>
 
     <style>
-        ul {
+        #main-menu {
             list-style-type: none;
 
             padding: 0;
@@ -15,11 +15,11 @@
             background-color: lightgray;
         }
 
-        ul > li {
+        #main-menu > li {
             display: inline-block;
         }
 
-        ul > li > a{
+        #main-menu > li > a{
             display: inline-block;
             padding: 10px;
 
@@ -28,15 +28,9 @@
 
         }
 
-        ul > li > a:hover{
+        #main-menu > li > a:hover{
             background-color: black;
         }
-
-       
-        
-        
-
-
 
 
     </style>
@@ -44,16 +38,33 @@
 <body>
 
     <nav>
-       <ul>
+       <ul id="main-menu">
         <li>
             <a href="/link1">Link 1</a></li>
         <li>
           <a href="link2">Link 2</a>
+           <!-- Add the sub menu-->
+          <ul id="sub-menu">
+            <li>
+                <a href="/dd-link1">DD Link 1</a></li>
+            <li>
+              <a href="/dd-link2">DD Link 2</a>
+            </li>
+            <li>
+              <a href="//dd-link3">DD Link 3</a>
+            </li>
+           </ul>
         </li>
+       
         <li>
           <a href="link3">Link 3</a>
         </li>
        </ul>
+
+       
+
+    
+
     </nav>
     
 </body>
