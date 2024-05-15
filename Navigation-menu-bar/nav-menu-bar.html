@@ -6,13 +6,16 @@
     <title>Document</title>
 
     <style>
-        #main-menu {
+
+        .menu-items{
             list-style-type: none;
 
             padding: 0;
             margin: 0;
+        }
+        #main-menu {
 
-            background-color: lightgray;
+            background-color: darkgray;
         }
 
         #main-menu > li {
@@ -31,6 +34,10 @@
         #main-menu > li > a:hover{
             background-color: black;
         }
+        
+        #submenu{
+            background-color: lightgray;
+        }
 
 
     </style>
@@ -38,13 +45,13 @@
 <body>
 
     <nav>
-       <ul id="main-menu">
+       <ul id="main-menu" class="menu-items">
         <li>
             <a href="/link1">Link 1</a></li>
         <li>
           <a href="link2">Link 2</a>
            <!-- Add the sub menu-->
-          <ul id="sub-menu">
+          <ul id="sub-menu" class="menu-items">
             <li>
                 <a href="/dd-link1">DD Link 1</a></li>
             <li>
