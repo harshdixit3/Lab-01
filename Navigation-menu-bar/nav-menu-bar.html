@@ -37,11 +37,11 @@
         
     
 
-        #parent-main-menu-item-2{
+        #parent-main-menu-item-2 ,#parent-main-menu-item-3 {
             position: relative;
         }
         
-        #sub-menu{
+        #sub-menu, #sub-menu-2 {
             position: absolute;
             background-color: lightgray;
             top: 30px;
@@ -50,7 +50,7 @@
             white-space: nowrap;
         }
         
-        #sub-menu{
+        #sub-menu, #sub-menu-2{
             display: none;
         }
 
@@ -59,10 +59,26 @@
 
         }
 
+        #parent-main-menu-item-3:hover #sub-menu-2{
+            display: block;
+
+        }
+        
+        header h1{
+            background-color: red;
+            padding: 20px;
+            text-align: right;
+
+        }
+
+
 
     </style>
     </head>
     <body>
+        <header>
+            <h1>Dropdown Demo</h1>
+        </header>
 
         <nav>
             <ul id="main-menu" class="menu-items">
@@ -70,6 +86,7 @@
                     <a href="/link1">Link 1</a></li>
                 <li id="parent-main-menu-item-2">
                     <a href="link2">Link 2</a>
+
                     <!-- Add the sub menu-->
                     <ul id="sub-menu" class="menu-items">
                         <li>
@@ -81,10 +98,24 @@
                             <a href="//dd-link3">DD Link 3</a>
                         </li>
                     </ul>
+
                 </li>
 
-                <li>
+                <li id="parent-main-menu-item-3">
                     <a href="link3">Link 3</a>
+
+                      <!-- Add the sub menu-->
+                      <ul id="sub-menu-2" class="menu-items">
+                        <li>
+                            <a href="/dd-link4">DD Link 4</a></li>
+                        <li>
+                            <a href="/dd-link5">DD Link 5</a>
+                        </li>
+                        <li>
+                            <a href="//dd-link6">DD Link 6</a>
+                        </li>
+                    </ul>
+
                 </li>
             </ul>
 
